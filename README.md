@@ -19,7 +19,7 @@ This task scheduler is designed to handle background job processing in distribut
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/task-scheduler.git
+git clone https://github.com/jagritv/task-scheduler.git
 cd task-scheduler
 ```
 
@@ -28,12 +28,20 @@ cd task-scheduler
 npm install
 ```
 
-3. Generate Prisma client:
+3. Create the environment file:
+```bash
+# Copy the example environment file
+cp .env.example .env
+
+# Optional: Edit the .env file if you need to change any configuration
+```
+
+4. Generate Prisma client:
 ```bash
 npx prisma generate
 ```
 
-4. Create database and run migrations:
+5. Create database and run migrations:
 ```bash
 npx prisma migrate dev --name init
 ```
